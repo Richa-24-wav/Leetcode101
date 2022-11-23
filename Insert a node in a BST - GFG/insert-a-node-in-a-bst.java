@@ -101,8 +101,8 @@ class GFG {
 class Solution {
     // Function to insert a node in a BST.
     Node insert(Node root, int Key) {
-        Node newNode = new Node(Key);
-       if(root==null)return newNode;
+     //   Node newNode = new Node(Key);
+       if(root==null)return new Node(Key);
        if(root.data > Key){
            root.left = insert(root.left,Key);
        }else if(root.data < Key){
